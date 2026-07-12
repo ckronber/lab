@@ -1,0 +1,9 @@
+str1="hello"
+str2="world"
+
+[[ "$str1" == "$str2" ]] && echo "Equal"
+[[ "$str1" != "$str2" ]] && echo "Not equal"
+
+# Empty/not empty
+[[ -z "$name" ]] && echo "Empty"
+[[ -n "$name" ]] && echo "Not empty"
