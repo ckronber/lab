@@ -1,0 +1,12 @@
+#!/bin/bash
+print_numbered() {
+    local items=("$@")
+    local i=1
+    for item in "${items[@]}"; do
+        echo "$i. $item"
+        ((i++))
+    done
+}
+
+tasks=("Buy Milk" "Walk dog" "Write Code")
+print_numbered "${tasks[@]}"

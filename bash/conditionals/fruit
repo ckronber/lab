@@ -1,0 +1,17 @@
+#!/bin/bash
+
+case $1 in
+    apple)
+        echo "Red"
+        ;;
+    banana)
+        echo "Yellow"
+        ;;
+    kiwi)
+    	echo "Green"
+	;;
+    *)
+        echo "Usage: $0 {apple|banana|kiwi}"
+        exit 1
+        ;;
+esac
