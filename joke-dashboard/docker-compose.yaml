@@ -17,17 +17,29 @@ services:
     depends_on:
       init:
         condition: service_completed_successfully
+    healthcheck:
+      test: ["CMD-SHELL", "pgrep updater || exit 1"]
+      interval: 30s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
 
   web:
     image: nginxinc/nginx-unprivileged:1.28
     ports:
-      - "8080:8080"
+      - "8081:8080"
     volumes:
       - html:/usr/share/nginx/html:ro
     restart: unless-stopped
     depends_on:
       init:
         condition: service_completed_successfully
+    healthcheck:
+      test: ["CMD", "curl", "-fsS", "http://127.0.0.1:8080/"]
+      interval: 30s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
 
 volumes:
   html:
