@@ -1,0 +1,26 @@
+replicaCount: 1
+image:
+  tag: "v2.9.1"
+
+env:
+#Pod Labels
+  podLabels:
+    {
+      hello: world
+  }
+
+service:
+  # -- Enable service
+  enabled: true
+  # -- Service type
+  type: LoadBalancer
+  externalIPs:
+    - 192.168.55.52
+  ports:
+    app:
+      # -- Service port
+      port: 7575
+      # -- Service target port
+      targetPort: http
+      # -- Service protocol
+      protocol: TCP

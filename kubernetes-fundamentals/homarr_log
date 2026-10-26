@@ -1,0 +1,401 @@
+Starting with UID='0', GID='0'
+Running DB migrations
+Created group 'everyone' through seed
+Created onboarding step through seed
+Created serverSetting through seed key=analytics
+Created serverSetting through seed key=crawlingAndIndexing
+Created serverSetting through seed key=board
+Created serverSetting through seed key=user
+Created serverSetting through seed key=appearance
+Skipping seeding for serverSetting as it already exists key=branding
+Created serverSetting through seed key=culture
+Created serverSetting through seed key=search
+Created 3 default search engines through seeding process
+Set Homarr docs as the default search engine
+No default integrations found to seed
+Created 4 default apps through seeding process
+Set default board as home board for everyone group
+Created default board 'dashboard' through seed
+Created 5 bundled custom widgets through seeding process
+Placed 7 widgets on board
+Migrated release widget providers to options count="0"
+Migrating app items with showDescriptionTooltip to descriptionDisplayMode count=0
+Migrated app items with showDescriptionTooltip to descriptionDisplayMode count=0
+Migration complete
+nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
+nginx: configuration file /etc/nginx/nginx.conf test is successful
+Starting internal Redis server
+35:C 24 Oct 2026 21:53:18.736 * oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+35:C 24 Oct 2026 21:53:18.736 * Redis version=8.8.0, bits=64, commit=00000000, modified=1, pid=35, just started
+35:C 24 Oct 2026 21:53:18.736 * Configuration loaded
+35:M 24 Oct 2026 21:53:18.736 * monotonic clock: POSIX clock_gettime
+35:M 24 Oct 2026 21:53:18.737 * Running mode=standalone, port=6379.
+35:M 24 Oct 2026 21:53:18.737 * Server initialized
+35:M 24 Oct 2026 21:53:18.737 * Ready to accept connections tcp
+35:M 24 Oct 2026 21:53:18.737 # WARNING: Redis does not require authentication. Redis will accept connections from any local client.
+▲ Next.js 16.3.6
+- Local:         http://localhost:3000
+- Network:       http://0.0.0.0:3000
+✓ Ready in 0ms
+✓ Running next.config took 1.5ms
+❌ Invalid environment variables: [
+  {
+    origin: 'string',
+    code: 'too_small',
+    minimum: 64,
+    inclusive: true,
+    path: [ 'SECRET_ENCRYPTION_KEY' ],
+    message: 'SECRET_ENCRYPTION_KEY has to be 64 characters, please generate a 64 character secret in hex format or use the following: "f9a04cb93a94dc380643a53067b03b99edc1b285bddff08a2680e3f4a4977ea0"'
+  },
+  {
+    origin: 'string',
+    code: 'invalid_format',
+    format: 'regex',
+    pattern: '/^[0-9a-fA-F]{64}$/',
+    path: [ 'SECRET_ENCRYPTION_KEY' ],
+    message: 'SECRET_ENCRYPTION_KEY must only contain hex characters, please generate a 64 character secret in hex format or use the following: "f9a04cb93a94dc380643a53067b03b99edc1b285bddff08a2680e3f4a4977ea0"'
+  }
+]
+2026-10-24T21:53:19.647Z [31merror[39m: Failed to load embedded tasks service module="instrumentation"
+    at _ (/app/apps/nextjs/.next/server/chunks/_0qpzzyn._.js:1:290)
+    at async Promise.all (index 0)
+    at async e (/app/apps/nextjs/.next/server/chunks/_0qpzzyn._.js:1:529)
+    at async Module.s [as register] (/app/apps/nextjs/.next/server/chunks/apps_nextjs_src_1if-9l4._.js:1:211)
+    at async registerInstrumentation (/app/node_modules/next/dist/server/lib/router-utils/instrumentation-globals.external.js:63:13)
+caused by Error: Invalid environment variables 
+    at /app/apps/nextjs/.next/server/chunks/[root-of-the-server]__0u_tx81._.js:1:2791
+    at /app/apps/nextjs/.next/server/chunks/[root-of-the-server]__0u_tx81._.js:1:2963
+    at /app/apps/nextjs/.next/server/chunks/[root-of-the-server]__0u_tx81._.js:1:3217
+    at module evaluation (/app/apps/nextjs/.next/server/chunks/_1tu0j9_._.js:174:322771)
+    at instantiateModule (/app/apps/nextjs/.next/server/chunks/[turbopack]_runtime.js:889:9)
+2026-10-24T21:53:19.648Z [31merror[39m: Failed to start embedded websocket service module="instrumentation"
+    at t (/app/apps/nextjs/.next/server/chunks/_0qpzzyn._.js:1:446)
+    at async Promise.all (index 1)
+    at async e (/app/apps/nextjs/.next/server/chunks/_0qpzzyn._.js:1:529)
+    at async Module.s [as register] (/app/apps/nextjs/.next/server/chunks/apps_nextjs_src_1if-9l4._.js:1:211)
+    at async registerInstrumentation (/app/node_modules/next/dist/server/lib/router-utils/instrumentation-globals.external.js:63:13)
+caused by Error: Invalid environment variables 
+    at /app/apps/nextjs/.next/server/chunks/[root-of-the-server]__0u_tx81._.js:1:2791
+    at /app/apps/nextjs/.next/server/chunks/[root-of-the-server]__0u_tx81._.js:1:2963
+    at /app/apps/nextjs/.next/server/chunks/[root-of-the-server]__0u_tx81._.js:1:3217
+    at module evaluation (/app/apps/nextjs/.next/server/chunks/_1tu0j9_._.js:174:322771)
+    at instantiateModule (/app/apps/nextjs/.next/server/chunks/[turbopack]_runtime.js:889:9)
+Failed to prepare server Error: An error occurred while loading instrumentation hook: Failed to load embedded tasks service
+    at _ (.next/server/chunks/_0qpzzyn._.js:1:290)
+    at async e (.next/server/chunks/_0qpzzyn._.js:1:529)
+    at async Module.s [as register] (.next/server/chunks/apps_nextjs_src_1if-9l4._.js:1:211) {
+  level: 'error',
+  [cause]: Error: Invalid environment variables
+      at <unknown> (.next/server/chunks/[root-of-the-server]__0u_tx81._.js:1:2791)
+      at <unknown> (.next/server/chunks/[root-of-the-server]__0u_tx81._.js:1:2963)
+      at <unknown> (.next/server/chunks/[root-of-the-server]__0u_tx81._.js:1:3217)
+      at module evaluation (.next/server/chunks/_1tu0j9_._.js:174:322771)
+      at instantiateModule (.next/server/chunks/[turbopack]_runtime.js:889:9)
+      at getOrInstantiateModuleFromParent (.next/server/chunks/[turbopack]_runtime.js:913:12)
+      at Context.esmImport [as i] (.next/server/chunks/[turbopack]_runtime.js:352:20)
+      at module evaluation (.next/server/chunks/_1tu0j9_._.js:174:323613)
+      at instantiateModule (.next/server/chunks/[turbopack]_runtime.js:889:9)
+      at getOrInstantiateModuleFromParent (.next/server/chunks/[turbopack]_runtime.js:913:12)
+}
+⨯ unhandledRejection: Error: Invalid environment variables
+    at <unknown> (.next/server/chunks/[root-of-the-server]__0u_tx81._.js:1:2791)
+    at <unknown> (.next/server/chunks/[root-of-the-server]__0u_tx81._.js:1:2963)
+    at <unknown> (.next/server/chunks/[root-of-the-server]__0u_tx81._.js:1:3217)
+    at module evaluation (.next/server/chunks/_1tu0j9_._.js:174:322771)
+    at instantiateModule (.next/server/chunks/[turbopack]_runtime.js:889:9)
+    at getOrInstantiateModuleFromParent (.next/server/chunks/[turbopack]_runtime.js:913:12)
+    at Context.esmImport [as i] (.next/server/chunks/[turbopack]_runtime.js:352:20)
+    at module evaluation (.next/server/chunks/_1tu0j9_._.js:174:323613)
+    at instantiateModule (.next/server/chunks/[turbopack]_runtime.js:889:9)
+    at getOrInstantiateModuleFromParent (.next/server/chunks/[turbopack]_runtime.js:913:12)
+⨯ unhandledRejection: Error: Invalid environment variables
+    at <unknown> (.next/server/chunks/[root-of-the-server]__0u_tx81._.js:1:2791)
+    at <unknown> (.next/server/chunks/[root-of-the-server]__0u_tx81._.js:1:2963)
+    at <unknown> (.next/server/chunks/[root-of-the-server]__0u_tx81._.js:1:3217)
+    at module evaluation (.next/server/chunks/_1tu0j9_._.js:174:322771)
+    at instantiateModule (.next/server/chunks/[turbopack]_runtime.js:889:9)
+    at getOrInstantiateModuleFromParent (.next/server/chunks/[turbopack]_runtime.js:913:12)
+    at Context.esmImport [as i] (.next/server/chunks/[turbopack]_runtime.js:352:20)
+    at module evaluation (.next/server/chunks/_1tu0j9_._.js:174:323613)
+    at instantiateModule (.next/server/chunks/[turbopack]_runtime.js:889:9)
+    at getOrInstantiateModuleFromParent (.next/server/chunks/[turbopack]_runtime.js:913:12)
+⨯ unhandledRejection: Error: An error occurred while loading instrumentation hook: Failed to load embedded tasks service
+    at _ (.next/server/chunks/_0qpzzyn._.js:1:290)
+    at async e (.next/server/chunks/_0qpzzyn._.js:1:529)
+    at async Module.s [as register] (.next/server/chunks/apps_nextjs_src_1if-9l4._.js:1:211) {
+  level: 'error',
+  [cause]: Error: Invalid environment variables
+      at <unknown> (.next/server/chunks/[root-of-the-server]__0u_tx81._.js:1:2791)
+      at <unknown> (.next/server/chunks/[root-of-the-server]__0u_tx81._.js:1:2963)
+      at <unknown> (.next/server/chunks/[root-of-the-server]__0u_tx81._.js:1:3217)
+      at module evaluation (.next/server/chunks/_1tu0j9_._.js:174:322771)
+      at instantiateModule (.next/server/chunks/[turbopack]_runtime.js:889:9)
+      at getOrInstantiateModuleFromParent (.next/server/chunks/[turbopack]_runtime.js:913:12)
+      at Context.esmImport [as i] (.next/server/chunks/[turbopack]_runtime.js:352:20)
+      at module evaluation (.next/server/chunks/_1tu0j9_._.js:174:323613)
+      at instantiateModule (.next/server/chunks/[turbopack]_runtime.js:889:9)
+      at getOrInstantiateModuleFromParent (.next/server/chunks/[turbopack]_runtime.js:913:12)
+}
+Failed to prepare server Error: An error occurred while loading instrumentation hook: Failed to load embedded tasks service
+    at _ (.next/server/chunks/_0qpzzyn._.js:1:290)
+    at async e (.next/server/chunks/_0qpzzyn._.js:1:529)
+    at async Module.s [as register] (.next/server/chunks/apps_nextjs_src_1if-9l4._.js:1:211) {
+  level: 'error',
+  [cause]: Error: Invalid environment variables
+      at <unknown> (.next/server/chunks/[root-of-the-server]__0u_tx81._.js:1:2791)
+      at <unknown> (.next/server/chunks/[root-of-the-server]__0u_tx81._.js:1:2963)
+      at <unknown> (.next/server/chunks/[root-of-the-server]__0u_tx81._.js:1:3217)
+      at module evaluation (.next/server/chunks/_1tu0j9_._.js:174:322771)
+      at instantiateModule (.next/server/chunks/[turbopack]_runtime.js:889:9)
+      at getOrInstantiateModuleFromParent (.next/server/chunks/[turbopack]_runtime.js:913:12)
+      at Context.esmImport [as i] (.next/server/chunks/[turbopack]_runtime.js:352:20)
+      at module evaluation (.next/server/chunks/_1tu0j9_._.js:174:323613)
+      at instantiateModule (.next/server/chunks/[turbopack]_runtime.js:889:9)
+      at getOrInstantiateModuleFromParent (.next/server/chunks/[turbopack]_runtime.js:913:12)
+}
+Error: An error occurred while loading instrumentation hook: Failed to load embedded tasks service
+    at _ (.next/server/chunks/_0qpzzyn._.js:1:290)
+    at async e (.next/server/chunks/_0qpzzyn._.js:1:529)
+    at async Module.s [as register] (.next/server/chunks/apps_nextjs_src_1if-9l4._.js:1:211) {
+  level: 'error',
+  [cause]: Error: Invalid environment variables
+      at <unknown> (.next/server/chunks/[root-of-the-server]__0u_tx81._.js:1:2791)
+      at <unknown> (.next/server/chunks/[root-of-the-server]__0u_tx81._.js:1:2963)
+      at <unknown> (.next/server/chunks/[root-of-the-server]__0u_tx81._.js:1:3217)
+      at module evaluation (.next/server/chunks/_1tu0j9_._.js:174:322771)
+      at instantiateModule (.next/server/chunks/[turbopack]_runtime.js:889:9)
+      at getOrInstantiateModuleFromParent (.next/server/chunks/[turbopack]_runtime.js:913:12)
+      at Context.esmImport [as i] (.next/server/chunks/[turbopack]_runtime.js:352:20)
+      at module evaluation (.next/server/chunks/_1tu0j9_._.js:174:323613)
+      at instantiateModule (.next/server/chunks/[turbopack]_runtime.js:889:9)
+      at getOrInstantiateModuleFromParent (.next/server/chunks/[turbopack]_runtime.js:913:12)
+}
+Error: An error occurred while loading instrumentation hook: Failed to load embedded tasks service
+    at _ (.next/server/chunks/_0qpzzyn._.js:1:290)
+    at async e (.next/server/chunks/_0qpzzyn._.js:1:529)
+    at async Module.s [as register] (.next/server/chunks/apps_nextjs_src_1if-9l4._.js:1:211) {
+  level: 'error',
+  [cause]: Error: Invalid environment variables
+      at <unknown> (.next/server/chunks/[root-of-the-server]__0u_tx81._.js:1:2791)
+      at <unknown> (.next/server/chunks/[root-of-the-server]__0u_tx81._.js:1:2963)
+      at <unknown> (.next/server/chunks/[root-of-the-server]__0u_tx81._.js:1:3217)
+      at module evaluation (.next/server/chunks/_1tu0j9_._.js:174:322771)
+      at instantiateModule (.next/server/chunks/[turbopack]_runtime.js:889:9)
+      at getOrInstantiateModuleFromParent (.next/server/chunks/[turbopack]_runtime.js:913:12)
+      at Context.esmImport [as i] (.next/server/chunks/[turbopack]_runtime.js:352:20)
+      at module evaluation (.next/server/chunks/_1tu0j9_._.js:174:323613)
+      at instantiateModule (.next/server/chunks/[turbopack]_runtime.js:889:9)
+      at getOrInstantiateModuleFromParent (.next/server/chunks/[turbopack]_runtime.js:913:12)
+}
+Error: An error occurred while loading instrumentation hook: Failed to load embedded tasks service
+    at _ (.next/server/chunks/_0qpzzyn._.js:1:290)
+    at async e (.next/server/chunks/_0qpzzyn._.js:1:529)
+    at async Module.s [as register] (.next/server/chunks/apps_nextjs_src_1if-9l4._.js:1:211) {
+  level: 'error',
+  [cause]: Error: Invalid environment variables
+      at <unknown> (.next/server/chunks/[root-of-the-server]__0u_tx81._.js:1:2791)
+      at <unknown> (.next/server/chunks/[root-of-the-server]__0u_tx81._.js:1:2963)
+      at <unknown> (.next/server/chunks/[root-of-the-server]__0u_tx81._.js:1:3217)
+      at module evaluation (.next/server/chunks/_1tu0j9_._.js:174:322771)
+      at instantiateModule (.next/server/chunks/[turbopack]_runtime.js:889:9)
+      at getOrInstantiateModuleFromParent (.next/server/chunks/[turbopack]_runtime.js:913:12)
+      at Context.esmImport [as i] (.next/server/chunks/[turbopack]_runtime.js:352:20)
+      at module evaluation (.next/server/chunks/_1tu0j9_._.js:174:323613)
+      at instantiateModule (.next/server/chunks/[turbopack]_runtime.js:889:9)
+      at getOrInstantiateModuleFromParent (.next/server/chunks/[turbopack]_runtime.js:913:12)
+}
+Error: An error occurred while loading instrumentation hook: Failed to load embedded tasks service
+    at _ (.next/server/chunks/_0qpzzyn._.js:1:290)
+    at async e (.next/server/chunks/_0qpzzyn._.js:1:529)
+    at async Module.s [as register] (.next/server/chunks/apps_nextjs_src_1if-9l4._.js:1:211) {
+  level: 'error',
+  [cause]: Error: Invalid environment variables
+      at <unknown> (.next/server/chunks/[root-of-the-server]__0u_tx81._.js:1:2791)
+      at <unknown> (.next/server/chunks/[root-of-the-server]__0u_tx81._.js:1:2963)
+      at <unknown> (.next/server/chunks/[root-of-the-server]__0u_tx81._.js:1:3217)
+      at module evaluation (.next/server/chunks/_1tu0j9_._.js:174:322771)
+      at instantiateModule (.next/server/chunks/[turbopack]_runtime.js:889:9)
+      at getOrInstantiateModuleFromParent (.next/server/chunks/[turbopack]_runtime.js:913:12)
+      at Context.esmImport [as i] (.next/server/chunks/[turbopack]_runtime.js:352:20)
+      at module evaluation (.next/server/chunks/_1tu0j9_._.js:174:323613)
+      at instantiateModule (.next/server/chunks/[turbopack]_runtime.js:889:9)
+      at getOrInstantiateModuleFromParent (.next/server/chunks/[turbopack]_runtime.js:913:12)
+}
+Error: An error occurred while loading instrumentation hook: Failed to load embedded tasks service
+    at _ (.next/server/chunks/_0qpzzyn._.js:1:290)
+    at async e (.next/server/chunks/_0qpzzyn._.js:1:529)
+    at async Module.s [as register] (.next/server/chunks/apps_nextjs_src_1if-9l4._.js:1:211) {
+  level: 'error',
+  [cause]: Error: Invalid environment variables
+      at <unknown> (.next/server/chunks/[root-of-the-server]__0u_tx81._.js:1:2791)
+      at <unknown> (.next/server/chunks/[root-of-the-server]__0u_tx81._.js:1:2963)
+      at <unknown> (.next/server/chunks/[root-of-the-server]__0u_tx81._.js:1:3217)
+      at module evaluation (.next/server/chunks/_1tu0j9_._.js:174:322771)
+      at instantiateModule (.next/server/chunks/[turbopack]_runtime.js:889:9)
+      at getOrInstantiateModuleFromParent (.next/server/chunks/[turbopack]_runtime.js:913:12)
+      at Context.esmImport [as i] (.next/server/chunks/[turbopack]_runtime.js:352:20)
+      at module evaluation (.next/server/chunks/_1tu0j9_._.js:174:323613)
+      at instantiateModule (.next/server/chunks/[turbopack]_runtime.js:889:9)
+      at getOrInstantiateModuleFromParent (.next/server/chunks/[turbopack]_runtime.js:913:12)
+}
+Error: An error occurred while loading instrumentation hook: Failed to load embedded tasks service
+    at _ (.next/server/chunks/_0qpzzyn._.js:1:290)
+    at async e (.next/server/chunks/_0qpzzyn._.js:1:529)
+    at async Module.s [as register] (.next/server/chunks/apps_nextjs_src_1if-9l4._.js:1:211) {
+  level: 'error',
+  [cause]: Error: Invalid environment variables
+      at <unknown> (.next/server/chunks/[root-of-the-server]__0u_tx81._.js:1:2791)
+      at <unknown> (.next/server/chunks/[root-of-the-server]__0u_tx81._.js:1:2963)
+      at <unknown> (.next/server/chunks/[root-of-the-server]__0u_tx81._.js:1:3217)
+      at module evaluation (.next/server/chunks/_1tu0j9_._.js:174:322771)
+      at instantiateModule (.next/server/chunks/[turbopack]_runtime.js:889:9)
+      at getOrInstantiateModuleFromParent (.next/server/chunks/[turbopack]_runtime.js:913:12)
+      at Context.esmImport [as i] (.next/server/chunks/[turbopack]_runtime.js:352:20)
+      at module evaluation (.next/server/chunks/_1tu0j9_._.js:174:323613)
+      at instantiateModule (.next/server/chunks/[turbopack]_runtime.js:889:9)
+      at getOrInstantiateModuleFromParent (.next/server/chunks/[turbopack]_runtime.js:913:12)
+}
+Error: An error occurred while loading instrumentation hook: Failed to load embedded tasks service
+    at _ (.next/server/chunks/_0qpzzyn._.js:1:290)
+    at async e (.next/server/chunks/_0qpzzyn._.js:1:529)
+    at async Module.s [as register] (.next/server/chunks/apps_nextjs_src_1if-9l4._.js:1:211) {
+  level: 'error',
+  [cause]: Error: Invalid environment variables
+      at <unknown> (.next/server/chunks/[root-of-the-server]__0u_tx81._.js:1:2791)
+      at <unknown> (.next/server/chunks/[root-of-the-server]__0u_tx81._.js:1:2963)
+      at <unknown> (.next/server/chunks/[root-of-the-server]__0u_tx81._.js:1:3217)
+      at module evaluation (.next/server/chunks/_1tu0j9_._.js:174:322771)
+      at instantiateModule (.next/server/chunks/[turbopack]_runtime.js:889:9)
+      at getOrInstantiateModuleFromParent (.next/server/chunks/[turbopack]_runtime.js:913:12)
+      at Context.esmImport [as i] (.next/server/chunks/[turbopack]_runtime.js:352:20)
+      at module evaluation (.next/server/chunks/_1tu0j9_._.js:174:323613)
+      at instantiateModule (.next/server/chunks/[turbopack]_runtime.js:889:9)
+      at getOrInstantiateModuleFromParent (.next/server/chunks/[turbopack]_runtime.js:913:12)
+}
+Error: An error occurred while loading instrumentation hook: Failed to load embedded tasks service
+    at _ (.next/server/chunks/_0qpzzyn._.js:1:290)
+    at async e (.next/server/chunks/_0qpzzyn._.js:1:529)
+    at async Module.s [as register] (.next/server/chunks/apps_nextjs_src_1if-9l4._.js:1:211) {
+  level: 'error',
+  [cause]: Error: Invalid environment variables
+      at <unknown> (.next/server/chunks/[root-of-the-server]__0u_tx81._.js:1:2791)
+      at <unknown> (.next/server/chunks/[root-of-the-server]__0u_tx81._.js:1:2963)
+      at <unknown> (.next/server/chunks/[root-of-the-server]__0u_tx81._.js:1:3217)
+      at module evaluation (.next/server/chunks/_1tu0j9_._.js:174:322771)
+      at instantiateModule (.next/server/chunks/[turbopack]_runtime.js:889:9)
+      at getOrInstantiateModuleFromParent (.next/server/chunks/[turbopack]_runtime.js:913:12)
+      at Context.esmImport [as i] (.next/server/chunks/[turbopack]_runtime.js:352:20)
+      at module evaluation (.next/server/chunks/_1tu0j9_._.js:174:323613)
+      at instantiateModule (.next/server/chunks/[turbopack]_runtime.js:889:9)
+      at getOrInstantiateModuleFromParent (.next/server/chunks/[turbopack]_runtime.js:913:12)
+}
+Error: An error occurred while loading instrumentation hook: Failed to load embedded tasks service
+    at _ (.next/server/chunks/_0qpzzyn._.js:1:290)
+    at async e (.next/server/chunks/_0qpzzyn._.js:1:529)
+    at async Module.s [as register] (.next/server/chunks/apps_nextjs_src_1if-9l4._.js:1:211) {
+  level: 'error',
+  [cause]: Error: Invalid environment variables
+      at <unknown> (.next/server/chunks/[root-of-the-server]__0u_tx81._.js:1:2791)
+      at <unknown> (.next/server/chunks/[root-of-the-server]__0u_tx81._.js:1:2963)
+      at <unknown> (.next/server/chunks/[root-of-the-server]__0u_tx81._.js:1:3217)
+      at module evaluation (.next/server/chunks/_1tu0j9_._.js:174:322771)
+      at instantiateModule (.next/server/chunks/[turbopack]_runtime.js:889:9)
+      at getOrInstantiateModuleFromParent (.next/server/chunks/[turbopack]_runtime.js:913:12)
+      at Context.esmImport [as i] (.next/server/chunks/[turbopack]_runtime.js:352:20)
+      at module evaluation (.next/server/chunks/_1tu0j9_._.js:174:323613)
+      at instantiateModule (.next/server/chunks/[turbopack]_runtime.js:889:9)
+      at getOrInstantiateModuleFromParent (.next/server/chunks/[turbopack]_runtime.js:913:12)
+}
+Error: An error occurred while loading instrumentation hook: Failed to load embedded tasks service
+    at _ (.next/server/chunks/_0qpzzyn._.js:1:290)
+    at async e (.next/server/chunks/_0qpzzyn._.js:1:529)
+    at async Module.s [as register] (.next/server/chunks/apps_nextjs_src_1if-9l4._.js:1:211) {
+  level: 'error',
+  [cause]: Error: Invalid environment variables
+      at <unknown> (.next/server/chunks/[root-of-the-server]__0u_tx81._.js:1:2791)
+      at <unknown> (.next/server/chunks/[root-of-the-server]__0u_tx81._.js:1:2963)
+      at <unknown> (.next/server/chunks/[root-of-the-server]__0u_tx81._.js:1:3217)
+      at module evaluation (.next/server/chunks/_1tu0j9_._.js:174:322771)
+      at instantiateModule (.next/server/chunks/[turbopack]_runtime.js:889:9)
+      at getOrInstantiateModuleFromParent (.next/server/chunks/[turbopack]_runtime.js:913:12)
+      at Context.esmImport [as i] (.next/server/chunks/[turbopack]_runtime.js:352:20)
+      at module evaluation (.next/server/chunks/_1tu0j9_._.js:174:323613)
+      at instantiateModule (.next/server/chunks/[turbopack]_runtime.js:889:9)
+      at getOrInstantiateModuleFromParent (.next/server/chunks/[turbopack]_runtime.js:913:12)
+}
+Error: An error occurred while loading instrumentation hook: Failed to load embedded tasks service
+    at _ (.next/server/chunks/_0qpzzyn._.js:1:290)
+    at async e (.next/server/chunks/_0qpzzyn._.js:1:529)
+    at async Module.s [as register] (.next/server/chunks/apps_nextjs_src_1if-9l4._.js:1:211) {
+  level: 'error',
+  [cause]: Error: Invalid environment variables
+      at <unknown> (.next/server/chunks/[root-of-the-server]__0u_tx81._.js:1:2791)
+      at <unknown> (.next/server/chunks/[root-of-the-server]__0u_tx81._.js:1:2963)
+      at <unknown> (.next/server/chunks/[root-of-the-server]__0u_tx81._.js:1:3217)
+      at module evaluation (.next/server/chunks/_1tu0j9_._.js:174:322771)
+      at instantiateModule (.next/server/chunks/[turbopack]_runtime.js:889:9)
+      at getOrInstantiateModuleFromParent (.next/server/chunks/[turbopack]_runtime.js:913:12)
+      at Context.esmImport [as i] (.next/server/chunks/[turbopack]_runtime.js:352:20)
+      at module evaluation (.next/server/chunks/_1tu0j9_._.js:174:323613)
+      at instantiateModule (.next/server/chunks/[turbopack]_runtime.js:889:9)
+      at getOrInstantiateModuleFromParent (.next/server/chunks/[turbopack]_runtime.js:913:12)
+}
+Error: An error occurred while loading instrumentation hook: Failed to load embedded tasks service
+    at _ (.next/server/chunks/_0qpzzyn._.js:1:290)
+    at async e (.next/server/chunks/_0qpzzyn._.js:1:529)
+    at async Module.s [as register] (.next/server/chunks/apps_nextjs_src_1if-9l4._.js:1:211) {
+  level: 'error',
+  [cause]: Error: Invalid environment variables
+      at <unknown> (.next/server/chunks/[root-of-the-server]__0u_tx81._.js:1:2791)
+      at <unknown> (.next/server/chunks/[root-of-the-server]__0u_tx81._.js:1:2963)
+      at <unknown> (.next/server/chunks/[root-of-the-server]__0u_tx81._.js:1:3217)
+      at module evaluation (.next/server/chunks/_1tu0j9_._.js:174:322771)
+      at instantiateModule (.next/server/chunks/[turbopack]_runtime.js:889:9)
+      at getOrInstantiateModuleFromParent (.next/server/chunks/[turbopack]_runtime.js:913:12)
+      at Context.esmImport [as i] (.next/server/chunks/[turbopack]_runtime.js:352:20)
+      at module evaluation (.next/server/chunks/_1tu0j9_._.js:174:323613)
+      at instantiateModule (.next/server/chunks/[turbopack]_runtime.js:889:9)
+      at getOrInstantiateModuleFromParent (.next/server/chunks/[turbopack]_runtime.js:913:12)
+}
+Error: An error occurred while loading instrumentation hook: Failed to load embedded tasks service
+    at _ (.next/server/chunks/_0qpzzyn._.js:1:290)
+    at async e (.next/server/chunks/_0qpzzyn._.js:1:529)
+    at async Module.s [as register] (.next/server/chunks/apps_nextjs_src_1if-9l4._.js:1:211) {
+  level: 'error',
+  [cause]: Error: Invalid environment variables
+      at <unknown> (.next/server/chunks/[root-of-the-server]__0u_tx81._.js:1:2791)
+      at <unknown> (.next/server/chunks/[root-of-the-server]__0u_tx81._.js:1:2963)
+      at <unknown> (.next/server/chunks/[root-of-the-server]__0u_tx81._.js:1:3217)
+      at module evaluation (.next/server/chunks/_1tu0j9_._.js:174:322771)
+      at instantiateModule (.next/server/chunks/[turbopack]_runtime.js:889:9)
+      at getOrInstantiateModuleFromParent (.next/server/chunks/[turbopack]_runtime.js:913:12)
+      at Context.esmImport [as i] (.next/server/chunks/[turbopack]_runtime.js:352:20)
+      at module evaluation (.next/server/chunks/_1tu0j9_._.js:174:323613)
+      at instantiateModule (.next/server/chunks/[turbopack]_runtime.js:889:9)
+      at getOrInstantiateModuleFromParent (.next/server/chunks/[turbopack]_runtime.js:913:12)
+}
+Error: An error occurred while loading instrumentation hook: Failed to load embedded tasks service
+    at _ (.next/server/chunks/_0qpzzyn._.js:1:290)
+    at async e (.next/server/chunks/_0qpzzyn._.js:1:529)
+    at async Module.s [as register] (.next/server/chunks/apps_nextjs_src_1if-9l4._.js:1:211) {
+  level: 'error',
+  [cause]: Error: Invalid environment variables
+      at <unknown> (.next/server/chunks/[root-of-the-server]__0u_tx81._.js:1:2791)
+      at <unknown> (.next/server/chunks/[root-of-the-server]__0u_tx81._.js:1:2963)
+      at <unknown> (.next/server/chunks/[root-of-the-server]__0u_tx81._.js:1:3217)
+      at module evaluation (.next/server/chunks/_1tu0j9_._.js:174:322771)
+      at instantiateModule (.next/server/chunks/[turbopack]_runtime.js:889:9)
+      at getOrInstantiateModuleFromParent (.next/server/chunks/[turbopack]_runtime.js:913:12)
+      at Context.esmImport [as i] (.next/server/chunks/[turbopack]_runtime.js:352:20)
+      at module evaluation (.next/server/chunks/_1tu0j9_._.js:174:323613)
+      at instantiateModule (.next/server/chunks/[turbopack]_runtime.js:889:9)
+      at getOrInstantiateModuleFromParent (.next/server/chunks/[turbopack]_runtime.js:913:12)
+}
+Shutting down...
+35:signal-handler (1792878832) Received SIGTERM scheduling shutdown...
+35:M 24 Oct 2026 21:53:52.608 * User requested shutdown...
+35:M 24 Oct 2026 21:53:52.608 * Saving the final RDB snapshot before exiting.
+35:M 24 Oct 2026 21:53:52.608 * BGSAVE done, 1 keys saved, 0 keys skipped, 1090 bytes written.
+35:M 24 Oct 2026 21:53:52.615 * DB saved on disk
+35:M 24 Oct 2026 21:53:52.615 # Redis is now ready to exit, bye bye...
+Shutdown complete.
