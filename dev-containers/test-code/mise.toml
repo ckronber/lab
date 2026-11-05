@@ -1,0 +1,5 @@
+[tools]
+chezmoi = "latest"
+kubectl = "latest"
+neovim = "latest"
+uv = "latest"
